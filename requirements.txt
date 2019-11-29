@@ -1,0 +1,6 @@
+tensorflow==1.14
+boto3==1.10.5
+botocore==1.13.5
+numpy==1.16.4
+pillow
+scipy

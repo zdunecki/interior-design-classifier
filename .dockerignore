@@ -1,0 +1,7 @@
+.env
+data
+dist
+build
+tidmnist.egg-info
+.gitignore
+Dockerfile
