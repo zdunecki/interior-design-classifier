@@ -65,7 +65,7 @@ def train_and_evaluate(args):
     with open(args.model_output, "w") as json_file:
         json_file.write(model_json)
 
-    keras_model.save_weights(args.weights_output)
+    keras_model.save(args.weights_output)
 
 
 def get_args():
