@@ -6,7 +6,7 @@ function build() {
   .
 }
 
-function run() {
+function train() {
   docker run \
   -e IMAGE_WIDTH=150 \
   -e IMAGE_HEIGHT=150 \
