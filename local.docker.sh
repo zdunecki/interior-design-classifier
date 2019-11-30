@@ -13,7 +13,7 @@ function train() {
   -e MODEL_OUTPUT="./output/model.json" \
   -e WEIGHTS_OUTPUT="./output/weights.h5" \
   -e BATCH_SIZE=128 \
-  -v "$PWD"/data/test:/app/data \
+  -v "$PWD"/data/:/app/data \
   -v "$PWD"/output:/app/output \
   registry.gitlab.com/topifyresearch/mnist
 }
