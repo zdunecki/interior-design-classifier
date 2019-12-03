@@ -9,8 +9,7 @@ with open('../output/model.json', 'r') as f:
 model = tf.keras.models.model_from_json(model_json)
 model.load_weights('../output/weights.h5')
 
-training_folder = "../data/test/validation/"
-rustic_folder = os.path.join(training_folder, "industrial")
+example_folder = os.path.join("../data/", "examples")
 
 labels = [
     "bohemian",
@@ -27,8 +26,8 @@ labels = [
     "transitional"
 ]
 
-for file_name in os.listdir(rustic_folder):
-    file_path = os.path.join(rustic_folder, file_name)
+for file_name in os.listdir(example_folder):
+    file_path = os.path.join(example_folder, file_name)
     img_pred = tf.keras.preprocessing.image.load_img(
         file_path,
         target_size=(150, 150, 3)
